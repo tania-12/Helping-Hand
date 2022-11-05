@@ -1,1 +1,153 @@
-/* Add custom CSS here */
+@font-face{
+  font-family: CaviarDreams;
+  src: url(CaviarDreams-webfont.woff);
+}
+@font-face{
+  font-family: CaviarDreams;
+  src: url(Caviar_Dreams_Bold-webfont.woff);
+  font-weight: bold;
+}
+body{
+    margin: 0;
+}
+
+.App{
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: CaviarDreams, Optima, Helvetica;
+  margin-top: 0;
+}
+.cell{
+  width: 100%;
+  min-height: 105vh;
+  min-width: 106vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: linear-gradient(90deg, rgba(29,23,125,1) 0%, rgba(74,32,124,1) 46%, rgba(29,23,125,1) 100%);
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 40px;
+  float: left;
+}
+
+.cell1{
+  width: 100%;
+  min-width: 108vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  background-color: white;
+  float: right;
+}
+.container-full{
+  max-width: none;
+  min-width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+.container-full1{
+    max-width: none;
+    min-width: 100%;
+    min-height: 105vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin-top: 0;
+    background: rgb(87,115,255);
+    background: linear-gradient(90deg, rgba(87,115,255,1) 0%, rgba(255,46,89,1) 100%);
+  }
+
+.text{
+  color:white;
+  align-items: center;
+  justify-items: center;
+}
+.auth-form-container, .login-form, .register-form{
+  display: flex;
+  flex-direction: column;
+}
+.auth-form-container, .register{
+  padding: 5rem;
+  border: 1px solid #D4D4D4;
+  border-radius: 10px;
+}
+label{
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input{
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #D4D4D4;
+}
+
+button{
+  border: none;
+  background-color: #ECECEC;
+  padding: 20px;
+  color:black;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgba(29,23,125,1);
+  font-size: 15px;
+}
+.link-btn{
+  background: none;
+  color: black;
+  text-decoration: underline;
+}
+.wave {
+  width: 950px;
+  height: 1025px;
+  position: absolute;
+  top: 98%;
+  left: 0%;
+  margin-left: -200px;
+  margin-top: -200px;
+  border-radius: 40%;
+  background: rgba(255, 255, 255, .75);
+  animation: wave 15s infinite linear;
+  overflow: hidden;
+}
+@keyframes wave {
+  from { transform: rotate(0deg);}
+  from { transform: rotate(360deg);}
+}
+.register{
+  color: white;
+  
+}
+.loginLink{
+  text-decoration: underline;
+  color: white;
+  background-color: #ECECEC;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgba(29,23,125,1);
+  font-size: 15px;
+}
+  .formTitles{
+  font-size: 15px;
+}
+

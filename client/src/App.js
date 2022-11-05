@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 import PostsListPage from "./pages/PostsListPage";
 import PostFormPage from "./pages/PostFormPage";
 import ShowPostPage from "./pages/ShowPostPage";
 import AboutUsPage from "./pages/AboutUsPage";
+import {Login} from "./pages/Login";
+import {Register} from "./pages/Register";
 
 import "./App.css";
 
@@ -32,9 +34,21 @@ function Navigation(props) {
 }
 
 function App() {
+  const [currentForm, setCurrentForm] = useState('login');
+  
+  const toggleForm = (formName) => {
+    setCurrentForm(formName);
+  }
+
   return (
+    
     <BrowserRouter>
       <Navigation />
+      <div className = "App">
+      {
+      currentForm === "login" ?  <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm}/>
+      }
+    </div>
       <div className="container-xl text-center">
         <div className="row justify-content-center">
           <Routes>
@@ -43,9 +57,12 @@ function App() {
             <Route path="/about-us" element={<AboutUsPage />} />
             <Route path="/" element={<PostsListPage />} />
           </Routes>
+          
         </div>
       </div>
     </BrowserRouter>
+
+    
   );
 }
 
