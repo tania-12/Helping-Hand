@@ -1,13 +1,18 @@
 import React, { useState } from "react";
+import {postData} from "../service/postUserData";
+
 export const Register = (props) => {
     const [email, setEmail] = useState ('');
     const [pass, setPass] = useState ('');
     const [name, setName] = useState('');
 
     const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(email);
-  }
+        e.preventDefault();
+        const {name, email, password} = e.target.elements;
+        const payload = {"name": name.value, "email": email.value, "password": password.value}
+        const result = postData("/register", payload)
+        console.log("result", result);
+    }
     return (
       <div class = "container container-full1">
       <div className = "auth-form-container" class = "register">

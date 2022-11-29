@@ -1,14 +1,20 @@
 import React, { useState } from "react";
+import {postData} from "../service/postUserData";
 
 
 export const Login = (props) => {
   const [email, setEmail] = useState ('');
   const [pass, setPass] = useState ('');
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email);
+    const {email, password} = e.target.elements;
+    const payload = {"email": email.value, "pass": password.value}
+    const result = postData("", payload)
+    console.log("result", result);
   }
+
   return (
     <div class = "container container-full">
       <div class = "cell" >

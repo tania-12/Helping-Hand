@@ -12,8 +12,32 @@ module.exports = (sequelize, DataTypes) => {
                     len: [3, 250],
                     notEmpty: true,
                 },
+                unique: false,
+            },
+            email: {
+                type: DataTypes.STRING,
+                validate: {
+                    len: [3, 250],
+                    notEmpty: true,
+                },
                 unique: true,
             },
+            password: {
+                type: DataTypes.STRING,
+                validate: {
+                    len: [1, 100],
+                    notEmpty: true,
+                },
+                unique: false,
+            },
+            hours: {
+                type: DataTypes.INT,
+                validate: {
+                    len: [3, 250],
+                    notEmpty: false,
+                },
+                unique: false,
+            }
         },
         {
             sequelize,
@@ -21,9 +45,6 @@ module.exports = (sequelize, DataTypes) => {
         }
     );
 
-    User.associate = (models) => {
-        // associations can be defined here
-    };
 
     return User;
 };
