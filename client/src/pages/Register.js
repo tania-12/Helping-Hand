@@ -10,7 +10,7 @@ export const Register = (props) => {
         e.preventDefault();
         const {name, email, password} = e.target.elements;
         const payload = {"name": name.value, "email": email.value, "password": password.value}
-        const result = postData("/register", payload)
+        const result = postData("/api/user_data/register", payload)
         console.log("result", result);
     }
     return (

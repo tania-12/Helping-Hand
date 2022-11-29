@@ -25,15 +25,15 @@ module.exports = (sequelize, DataTypes) => {
             password: {
                 type: DataTypes.STRING,
                 validate: {
-                    len: [1, 100],
+                    len: [6, 100],
                     notEmpty: true,
                 },
                 unique: false,
             },
             hours: {
-                type: DataTypes.INT,
+                type: DataTypes.INTEGER,
                 validate: {
-                    len: [3, 250],
+                    len: [1, 100],
                     notEmpty: false,
                 },
                 unique: false,

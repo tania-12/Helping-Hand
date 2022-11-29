@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e324e6b-84ae-45ad-a11b-f3697459026a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/controllers/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/userData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/service/postUserData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models/Password.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controllers/userData.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/userData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models/Username.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/service/postUserData.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/service/postUserData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +47,7 @@
       <workItem from="1669399508124" duration="16000" />
       <workItem from="1669399548145" duration="348000" />
       <workItem from="1669602422256" duration="3032000" />
-      <workItem from="1669749114057" duration="5212000" />
+      <workItem from="1669749114057" duration="10477000" />
     </task>
     <servers />
   </component>

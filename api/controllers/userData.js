@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const db = require("../models");
-import {User} from "../models/User";
+const {User} =  db;
 
 // This is a simple example for providing basic CRUD routes for
 // a resource/model. It provides the following:
@@ -11,10 +11,14 @@ import {User} from "../models/User";
 //    PUT    /api/micro_posts/:id
 //    DELETE /api/micro_posts/:id
 
+router.get("/", (req, res) => {
+    User.findAll({}).then((allUsers) => res.json(allUsers));
+});
+
 router.post("/register", (req, res) => {
     console.log("req", req.body)
     let { name, email, password } = req.body;
-
+    //
     User.create({ name, email, password })
         .then((newUser) => {
             console.log("newUser", newUser)
@@ -23,18 +27,25 @@ router.post("/register", (req, res) => {
         .catch((err) => {
             res.status(400).json(err);
         });
+
 });
 
 router.post("/login", (req, res) => {
-    let { content } = req.body;
 
-    Login.create({ content })
-        .then((newPost) => {
-            res.status(201).json(newPost);
-        })
-        .catch((err) => {
-            res.status(400).json(err);
-        });
+    //checking if email exist or is valid
+    User.findOne({
+        where: {
+            email: req.body.email,
+            password: req.body.password
+        },
+    }).then((credentialCheck) => {
+        res.status(201).json(credentialCheck);
+    }).catch((err) => {
+        res.status(400).json(err);
+    });
+
+
+
 });
 
 module.exports = router;

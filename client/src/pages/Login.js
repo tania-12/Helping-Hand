@@ -10,8 +10,8 @@ export const Login = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const {email, password} = e.target.elements;
-    const payload = {"email": email.value, "pass": password.value}
-    const result = postData("", payload)
+    const payload = {"email": email.value, "password": password.value}
+    const result = postData("/api/user_data/login", payload)
     console.log("result", result);
   }
 
