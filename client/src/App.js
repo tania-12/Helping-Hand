@@ -6,7 +6,9 @@ import ShowPostPage from "./pages/ShowPostPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import {Login} from "./pages/Login";
 import {Register} from "./pages/Register";
+import Menu from "./pages/Menu";
 import Home from "./pages/Home";
+import ProfilePage from "./pages/Profile";
 import "./App.css";
 
 
@@ -39,7 +41,16 @@ function Navigation(props) {
               About Us
             </NavLink>
           </li>
-          
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/Menu">
+              Menu
+            </NavLink>
+            </li>
+            <li className="nav-item">
+            <NavLink className="nav-link" to="/Profile">
+              Profile
+            </NavLink>
+            </li>
         </ul>
       </div>
     </nav>
@@ -64,6 +75,8 @@ function App() {
             <Route path="/Register" element={<Register />} />
             <Route path="/about-us" element={<AboutUsPage />} />
             <Route path="/Home" element={<Home />} />
+            <Route path="/Menu" element={<Menu />} />
+            <Route path="/Profile" element={<ProfilePage />} />
           </Routes>
           
         </div>

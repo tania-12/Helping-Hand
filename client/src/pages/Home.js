@@ -1,4 +1,4 @@
-import helpingHand from '/Users/taniasacoto/Helping-Hand/client/src/HelpingHand1.png';
+import helpingHand from './HelpingHand1.png';
 
 
 function Home() {
