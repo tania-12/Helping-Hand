@@ -1,0 +1,119 @@
+
+.menu{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 22%, rgba(187,181,219,1) 62%, rgba(148,187,233,1) 100%); 
+  }
+  .heading{
+    text-align:center;
+    font-size: 3.5rem;
+    padding:1rem;
+    color:rgb(0, 0, 0)
+  }
+  .box{
+    justify-content: center;
+    text-align: center;
+    position: inherit;
+  }
+  .menu .box-container{
+    display:grid;
+    flex-wrap:wrap;
+    margin:2rem;
+    grid-template-columns: repeat(auto-fit,minmax(12rem,16rem));
+    grid-gap: 2rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .menu .box-container .box{
+    
+    border:.3rem solid rgba(0,0,0,.3);
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--clr-gray200);
+    border-radius:var(--radius);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor:pointer;
+    transition: transform 200ms ease-in;
+  }
+  .menu .box-container .box:hover{
+    transform: scale(1.02);
+  }
+  .menu .box-container .box .content{
+    text-align: center;
+    background: white;
+    padding:2rem;
+    background: rgb(87,115,255);
+    background: white;
+    border-radius:1rem;
+  }
+  
+  .menu .box-container .box .content img{
+        border-radius: 10%;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(228, 177, 226);
+        background-color: rgb(228, 177, 226);
+        display: inline;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+  }
+  
+  
+  .menu .box-container .box .content p{
+    font-size: 1.6rem;
+    padding:2rem 1rem;
+    display:inline-block;
+    text-align: center;
+  }
+  button.boss{
+    text-align: center;
+    font-size:x-large;
+    border-color: #000;
+    border-radius: 20px;
+    padding:0px 10px;;
+    margin-bottom: 6%;
+    width:4cm;
+    transform: translateX(35%);
+  }
+  button.boss:hover {
+    background: greenyellow;
+    color:black;
+  }
+  button.accept{
+    text-align: center;
+    border-color: #000;
+    border-radius: 20px;
+    padding:0px 10px;;
+    margin-bottom: 6%;
+    width:3cm;
+    transform: translateX(60%);
+  }
+  button.accept:hover {
+    background: red;
+    color:black;
+  }
+  
+  button.eventInfo{
+    text-align: center;
+    border-color: #000;
+    border-radius: 20px;
+    padding:0px 10px;;
+    margin-bottom: 6%;
+    width:4cm;
+    transform:translateX(35%);
+  }
+  button.eventInfo:hover {
+    background: lightskyblue;
+    color:black;
+  }
+  .logo{
+    margin:1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    height: 0px;  
+  }
