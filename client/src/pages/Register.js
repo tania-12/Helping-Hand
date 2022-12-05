@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {postData} from "../service/postUserData";
+import { Link } from 'react-router-dom';
 
 export const Register = (props) => {
     const [email, setEmail] = useState ('');
@@ -28,7 +29,9 @@ export const Register = (props) => {
           <button type = "submit"> Register</button>
       </form>
       <label class = "formTitles" htmlFor = "login"> Already have an account? </label>
-      <button class = "loginLink" className = "link-btn" type = "login" onClick = {() => props.onFormSwitch('login')}>Login</button>
+      <Link to = "/Login"> 
+        <button class = "loginLink" className = "link-btn" type = "login">Login</button>
+      </Link>     
     </div>  
     </div>
     )

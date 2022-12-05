@@ -6,20 +6,32 @@ import ShowPostPage from "./pages/ShowPostPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import {Login} from "./pages/Login";
 import {Register} from "./pages/Register";
-
+import Home from "./pages/Home";
 import "./App.css";
+
+
 
 function Navigation(props) {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark shadow mb-3">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          Micro Blog
+        <Link className="navbar-brand" to="/Home">
+          Helping Hand
         </Link>
         <ul className="navbar-nav me-auto">
           <li className="nav-item">
-            <NavLink className="nav-link" to="/posts/new">
-              Create a Micro Post
+            <NavLink className="nav-link" to="/Home">
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/Login">
+              Login
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/Register">
+              Register
             </NavLink>
           </li>
           <li className="nav-item">
@@ -27,6 +39,7 @@ function Navigation(props) {
               About Us
             </NavLink>
           </li>
+          
         </ul>
       </div>
     </nav>
@@ -44,18 +57,13 @@ function App() {
     
     <BrowserRouter>
       <Navigation />
-      <div className = "App">
-      {
-      currentForm === "login" ?  <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm}/>
-      }
-    </div>
       <div className="container-xl text-center">
         <div className="row justify-content-center">
           <Routes>
-            <Route path="/posts/new" element={<PostFormPage />} />
-            <Route path="/posts/:id" element={<ShowPostPage />} />
+            <Route path="/Login" element={<Login />} />
+            <Route path="/Register" element={<Register />} />
             <Route path="/about-us" element={<AboutUsPage />} />
-            <Route path="/" element={<PostsListPage />} />
+            <Route path="/Home" element={<Home />} />
           </Routes>
           
         </div>

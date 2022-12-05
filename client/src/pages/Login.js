@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {postData} from "../service/postUserData";
+import { Link } from 'react-router-dom';
 
 
 export const Login = (props) => {
@@ -19,7 +20,9 @@ export const Login = (props) => {
     <div class = "container container-full">
       <div class = "cell" >
         <div class = "text"> Ready to Lend a Hand? </div>
-        <div class="wave"></div>
+        <div class = "waveHolder">
+          <div class="wave"></div>
+        </div>
       </div>
       
       <div class = "cell1">
@@ -35,10 +38,12 @@ export const Login = (props) => {
         </form>
           
           <label class = "formTitles" htmlFor = "register"> Don't have an account? </label>
-        <button className = "link-btn" type = "register" onClick = {() => props.onFormSwitch('register')}>Register</button>
+        <Link to = "/Register"> 
+          <button class = "registerLink" className = "link-btn" type = "register" >Register</button>
+        </Link> 
       </div> 
-      </div>  
-    </div>
+    </div>  
+  </div>
       
   )
 }
