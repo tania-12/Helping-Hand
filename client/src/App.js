@@ -35,11 +35,6 @@ function Navigation(props) {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/about-us">
-              About Us
-            </NavLink>
-          </li>
-          <li className="nav-item">
             <NavLink className="nav-link" to="/Menu">
               Menu
             </NavLink>
@@ -49,13 +44,21 @@ function Navigation(props) {
               Profile
             </NavLink>
             </li>
+            <li className="nav-item">
+            <NavLink className="nav-link" to="/about-us">
+              About Us
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>
   );
 }
 
+
 function App() {
+
+  
   const [currentForm, setCurrentForm] = useState('login');
   
   const toggleForm = (formName) => {

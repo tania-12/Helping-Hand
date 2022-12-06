@@ -98,7 +98,6 @@ function ProfilePage(props) {
         </div>
       </div>
     </div>
-
   );
 }
 export default ProfilePage;

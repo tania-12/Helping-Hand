@@ -164,15 +164,26 @@ button{
 
 /*HOME PAGE*/
 body{
-  background-color:#f6d992; 
+  background-color:rgb(87,115,255);
   scroll-behavior: smooth; 
+ }
+ .landingPage{
+  max-width: none;
+    min-width: 100%;
+    top: 55px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 0;
+    background: linear-gradient(90deg, rgba(29,23,125,1) 0%, rgba(74,32,124,1) 46%, rgba(29,23,125,1) 100%);
+
  }
  .mainImage{
    background-repeat: no-repeat;
    background-position: center center;
-   max-width: 100%;
-   overflow-x: hidden;
-   overscroll-behavior-x: contain;
+   width: 100%;
+   margin-left: -129px;
    margin: 0;
    padding: 0;
  }
@@ -195,6 +206,7 @@ body{
  
  .LPTitle {
    font-family: CaviarDreams, Optima, Helvetica;
+   color: white;
    padding: 60px;
    margin-top: 30px;
    margin-left: 30px;
@@ -217,7 +229,8 @@ body{
  
  .block1{
    font-family: CaviarDreams, Optima, Helvetica;
-   background-color:#f6c492; 
+   color: white;
+   background-color: #8b13de; 
    text-align: center;
    justify-content: center;
    align-items: center;
@@ -229,7 +242,7 @@ body{
    border-radius: 15px;
    box-shadow: 10px;
    animation: Slide_Up 2.1s ease;
-   box-shadow: 10px 10px 1px #f6b092;
+   box-shadow: 10px 10px 1px #671791
  }
  .aboutHH{
    margin: 30px;
@@ -251,6 +264,7 @@ body{
     margin-top: 0;
     background: rgb(87,115,255);
     background: linear-gradient(90deg, rgba(87,115,255,1) 0%, rgba(255,46,89,1) 100%);
+
   }
   
 .heading{
@@ -385,7 +399,7 @@ button{
   border-radius: 15px;
 }
 .ProgressContainer{
-  width: 50%;
+  width: 100%;
   margin: auto;
   margin-top: 20px;
   padding: 5rem;
@@ -449,11 +463,23 @@ main {
 }
 
 /* ABOUT-US */
+
 .zakia{
   margin:1.5rem;
   display:inline;
   border-radius: 50%;
   border-color: pink;
+  border-style: solid;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px; 
+}
+.tania{
+  margin:1.5rem;
+  display:inline;
+  border-radius: 50%;
+  border-color: #f6b092;
   border-style: solid;
   align-items: center;
   justify-content: center;

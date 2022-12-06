@@ -1,5 +1,6 @@
 import React from "react";
 import zakiaImage from "./zakia.png";
+import tania from "./womanicon.png";
 
 function AboutUsPage(props) {
 
@@ -16,12 +17,10 @@ function AboutUsPage(props) {
         <h2 className="mb-3">The Helping Zone</h2>
         <div className="row">
           <div className="col-lg-4">
+           <img src = {tania} class="tania" alt="" ></img>
             <h3>Tania Sacoto</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Dignissimos in itaque nihil consectetur qui natus similique
-              nostrum molestias, ipsa explicabo hic impedit aspernatur. Ipsa
-              provident neque culpa alias incidunt amet.
+              I am a senior Queens College. I am currently majoring in Computer Science with a minor in Interaction Design.
             </p>
           </div>
           <div className="col-lg-4">

@@ -11,11 +11,11 @@ function Progress(props) {
     setValue(event.target.value);
   }
   function addHours (event){
-    setSum(sum + Number(value));
+    setSum(sum + parseInt(value));
     event.preventDefault();
   }
   function subHours (event){
-    setSum(sum - Number(value));
+    setSum(sum - parseInt(value));
     event.preventDefault();
   }
   
