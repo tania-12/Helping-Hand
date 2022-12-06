@@ -11,8 +11,6 @@ import Home from "./pages/Home";
 import ProfilePage from "./pages/Profile";
 import "./App.css";
 
-
-
 function Navigation(props) {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark shadow mb-3">
@@ -64,6 +62,7 @@ function App() {
     setCurrentForm(formName);
   }
 
+
   return (
     
     <BrowserRouter>
@@ -86,5 +85,8 @@ function App() {
     
   );
 }
+
+
+
 
 export default App;
