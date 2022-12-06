@@ -253,32 +253,23 @@ body{
  }
 
  /* MENU */
-.menu{
-  max-width: none;
-    min-width: 100%;
-    top: 55px;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-top: 0;
-    background: rgb(87,115,255);
-    background: linear-gradient(90deg, rgba(87,115,255,1) 0%, rgba(255,46,89,1) 100%);
 
-  }
+ .menu{
+  background: rgb(238,174,202);
   
+}
 .heading{
   text-align:center;
   font-size: 3.5rem;
   padding:1rem;
   color:rgb(0, 0, 0)
 }
-.box{
+.card{
   justify-content: center;
   text-align: center;
   position: inherit;
 }
-.menu .box-container{
+.menu .card-container{
   display:grid;
   flex-wrap:wrap;
   margin:2rem;
@@ -287,7 +278,7 @@ body{
   justify-content: center;
   text-align: center;
 }
-.menu .box-container .box{
+.menu .card-container .card{
   
   border:.3rem solid rgba(0,0,0,.3);
   background-color: #fff;
@@ -300,24 +291,20 @@ body{
   cursor:pointer;
   transition: transform 200ms ease-in;
 }
-.menu .box-container .box:hover{
+.menu .card-container .card:hover{
   transform: scale(1.02);
 }
-.menu .box-container .box .content{
+.menu .card-container .card .content{
   text-align: center;
   background: white;
   padding:2rem;
-  background: rgb(87,115,255);
   background: white;
   border-radius:1rem;
 }
 
-.menu .box-container .box .content img{
+.menu .card-container .card .content img{
       border-radius: 10%;
-      border-style: solid;
       border-width: 5px;
-      border-color: rgb(228, 177, 226);
-      background-color: rgb(228, 177, 226);
       display: inline;
       align-items: center;
       justify-content: center;
@@ -325,8 +312,7 @@ body{
       height: 100px;
 }
 
-
-.menu .box-container .box .content p{
+.menu .card-container .card .content p{
   font-size: 1.6rem;
   padding:2rem 1rem;
   display:inline-block;
@@ -334,9 +320,9 @@ body{
 }
 button.boss{
   text-align: center;
-  font-size:x-large;
   border-color: #000;
   border-radius: 20px;
+  font-size: medium;
   padding:0px 10px;;
   margin-bottom: 6%;
   width:4cm;
@@ -367,7 +353,7 @@ button.eventInfo{
   padding:0px 10px;;
   margin-bottom: 6%;
   width:4cm;
-  transform:translateX(35%);
+  transform: translateX(35%);
 }
 button.eventInfo:hover {
   background: lightskyblue;
@@ -380,6 +366,19 @@ button.eventInfo:hover {
   justify-content: center;
   width: 0px;
   height: 0px;  
+}
+.menu{
+  max-width: none;
+    min-width: 100%;
+    top: 55px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    margin-top: 0;
+  background: rgb(87,115,255);
+  background: linear-gradient(90deg, rgba(87,115,255,1) 0%, rgba(255,46,89,1) 100%);
 }
 
 /* Progress */
@@ -480,6 +479,17 @@ main {
   display:inline;
   border-radius: 50%;
   border-color: #f6b092;
+  border-style: solid;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px; 
+}
+.hema{
+  margin:1.5rem;
+  display:inline;
+  border-radius: 50%;
+  border-color: rgb(186, 177, 8);
   border-style: solid;
   align-items: center;
   justify-content: center;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import pic from "./profile.jpeg";
+import pic from "../images/profile.jpeg";
 import Progress from "../components/Progress";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -7,21 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 console.log(pic);
 
 function ProfilePage(props) {
-   const [value, setValue] = useState(0);
-   const [sum, setSum] = useState(0); 
-   const [max, MaxValue] = useState(0);
-
-   function currentValue (event){
-     setValue(event.target.value);
-   }
-   function addHours (event){
-     setSum(sum + Number(value));
-     event.preventDefault();
-   }
-   function subHours (event){
-     setSum(sum - Number(value));
-     event.preventDefault();
-   }
   return (
     <div class="row gutters-sm">
       <div class="col-md-4 mb-3">
