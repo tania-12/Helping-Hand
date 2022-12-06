@@ -21,7 +21,7 @@ function Progress(props) {
   
   return (
     <div className = "ProgressContainer">
-      <label class = "goal"> Set Your Goal </label>
+      <label className = "goal"> Set Your Goal </label>
       <input value = {max} onChange = {(event) => MaxValue(event.target.value)} type = "number" name = "goalAmount" />
       <label>Hours</label>
       <input type="number" id="inputtext" onChange = {currentValue} min = "0.00"/>
