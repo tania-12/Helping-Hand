@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import {postData} from "../service/postUserData";
 import { Link } from 'react-router-dom';
+import { useAuth } from "../context/AuthContext";
 
 
 export const Login = (props) => {
+  const auth = useAuth();
   const [email, setEmail] = useState ('');
   const [pass, setPass] = useState ('');
 

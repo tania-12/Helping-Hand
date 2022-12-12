@@ -9,6 +9,9 @@ import {Register} from "./pages/Register";
 import Menu from "./pages/Menu";
 import Home from "./pages/Home";
 import ProfilePage from "./pages/Profile";
+import { AuthProvider } from "./context/AuthContext";
+import AuthButton from "./components/AuthButton";
+import PrivateRouteRequiresAuth from "./components/PrivateRouteRequiresAuth";
 import "./App.css";
 
 function Navigation(props) {
@@ -22,11 +25,6 @@ function Navigation(props) {
           <li className="nav-item">
             <NavLink className="nav-link" to="/Home">
               Home
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/Login">
-              Login
             </NavLink>
           </li>
           <li className="nav-item">
@@ -51,14 +49,13 @@ function Navigation(props) {
           </li>
         </ul>
       </div>
+      <AuthButton />
     </nav>
   );
 }
 
 
 function App() {
-
-  
   const [currentForm, setCurrentForm] = useState('login');
   
   const toggleForm = (formName) => {
@@ -67,13 +64,13 @@ function App() {
 
 
   return (
-    
+    <AuthProvider>
     <BrowserRouter>
       <Navigation />
       <div className="container-xl text-center">
         <div className="row justify-content-center">
           <Routes>
-            <Route path="/Login" element={<Login />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/Register" element={<Register />} />
             <Route path="/about-us" element={<AboutUsPage />} />
             <Route path="/Home" element={<Home />} />
@@ -84,7 +81,7 @@ function App() {
         </div>
       </div>
     </BrowserRouter>
-
+    </AuthProvider>
     
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import pic from "../images/profile.jpeg";
+import Chat from "../components/Chat";
 import Progress from "../components/Progress";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -19,7 +20,7 @@ function ProfilePage(props) {
                 <p class="text-secondary mb-1">Title</p>
                 <p class="text-muted font-size-sm">Organization/School</p>
                 <button class="btn btn-primary">Follow</button>
-                <button class="btn btn-outline-primary">Message</button>
+                <button class="btn btn-outline-primary" onClick ={Chat}>Message</button>
               </div>
             </div>
           </div>
@@ -77,7 +78,7 @@ function ProfilePage(props) {
           <div class="card h-100">
             <div class="card-body">
               <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Progress Status</i></h6>
-               <Progress />
+               <Progress /> 
             </div>
           </div>
         </div>
