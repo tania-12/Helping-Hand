@@ -19,15 +19,15 @@ export const Login = (props) => {
   }
 
   return (
-    <div class = "container container-full">
-      <div class = "cell" >
-        <div class = "text"> Ready to Lend a Hand? </div>
-        <div class = "waveHolder">
-          <div class="wave"></div>
+    <div className = "container container-full">
+      <div className = "cell" >
+        <div className = "text"> Ready to Lend a Hand? </div>
+        <div className = "waveHolder">
+          <div className="wave"></div>
         </div>
       </div>
       
-      <div class = "cell1">
+      <div className = "cell1">
         <div className = "auth-form-container">
           <h2>Log In</h2>
           <form className = "login-form" onSubmit = {handleSubmit}>
@@ -42,7 +42,7 @@ export const Login = (props) => {
 
         </form>
           
-          <label class = "formTitles" htmlFor = "register"> Don't have an account? </label>
+          <label className = "formTitles" htmlFor = "register"> Don't have an account? </label>
         <Link to = "/Register"> 
           <button class = "registerLink" className = "link-btn" type = "register" >Register</button>
         </Link> 

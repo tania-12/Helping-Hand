@@ -15,22 +15,22 @@ export const Register = (props) => {
         console.log("result", result);
     }
     return (
-      <div class = "container container-full1">
+      <div className = "container container-full1">
       <div className = "auth-form-container" class = "register">
         <h2>Register</h2>
       <form className = "register-form" onSubmit = {handleSubmit}>
-          <label class = "formTitles" htmlFor = "name">Full Name</label>
+          <label className = "formTitles" htmlFor = "name">Full Name</label>
           <input value = {name} onChange = {(e) => setName(e.target.value)} name = "name" id = "name" placeholder = "Full Name" />
-          <label class = "formTitles" htmlFor = "email"> Email </label>
+          <label className = "formTitles" htmlFor = "email"> Email </label>
           <input value = {email} onChange = {(e) => setEmail(e.target.value)} type = "email" placeholder = "yourEmail@email.com" name = "email"/>
 
-          <label class = "formTitles" htmlFor = "password"> Password </label>
+          <label className = "formTitles" htmlFor = "password"> Password </label>
           <input value = {pass} onChange = {(e) => setPass(e.target.value)}  type = "password" placeholder = "******" name = "password"/>
           <Link to = "/Profile">
               <button type = "submit"> Register</button>
           </Link>
       </form>
-      <label class = "formTitles" htmlFor = "login"> Already have an account? </label>
+      <label className = "formTitles" htmlFor = "login"> Already have an account? </label>
       <Link to = "/Login"> 
         <button class = "loginLink" className = "link-btn" type = "login">Login</button>
       </Link>     

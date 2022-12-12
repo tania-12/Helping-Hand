@@ -7,18 +7,18 @@ function Home() {
     <div className = "landingPage">
       <img className = "mainImage" alt="helping" src = {helpingHand} />
 
-      <h1 class = "LPTitle">What we're about</h1>
+      <h1 className = "LPTitle">What we're about</h1>
       <div className = "LPcontainer">
         
         <div className = "block">
         </div>
         <div className = "block1">
-          <p class = "aboutHH">Helping hand is a platform that allows users to find volunteer sites with ease. Get connected with us now</p>
+          <p className = "aboutHH">Helping hand is a platform that allows users to find volunteer sites with ease. Get connected with us now</p>
         </div>
         <div className = "block">
         </div>
       </div>
-      <div class = "footer">
+      <div className = "footer">
       </div>
     </div>
     

@@ -164,7 +164,8 @@ button{
 
 /*HOME PAGE*/
 body{
-  background-color:rgb(87,115,255);
+  background: rgb(121,151,255);
+  background: linear-gradient(90deg, rgba(121,151,255,1) 24%, rgba(94,99,204,1) 61%);
   scroll-behavior: smooth; 
  }
  .landingPage{
@@ -176,8 +177,6 @@ body{
     align-items: center;
     align-content: center;
     margin-top: 0;
-    background: linear-gradient(90deg, rgba(29,23,125,1) 0%, rgba(74,32,124,1) 46%, rgba(29,23,125,1) 100%);
-
  }
  .mainImage{
    background-repeat: no-repeat;
@@ -279,12 +278,11 @@ body{
   text-align: center;
 }
 .menu .card-container .card{
-  
   border:.3rem solid rgba(0,0,0,.3);
+  border-radius: 15px;;
   background-color: #fff;
   overflow: hidden;
   box-shadow: 0px 2px 20px var(--clr-gray200);
-  border-radius:var(--radius);
   display:flex;
   flex-direction: column;
   justify-content: space-between;
@@ -310,6 +308,10 @@ body{
       justify-content: center;
       width: 100px;
       height: 100px;
+}
+content.longImage{
+  width:1000px;
+  height:100px;
 }
 
 .menu .card-container .card .content p{
@@ -369,14 +371,13 @@ button.eventInfo:hover {
 }
 .menu{
   max-width: none;
-    min-width: 100%;
-    top: 55px;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-
-    margin-top: 0;
+  min-width: 100%;
+  top: 55px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 0;
   background: rgb(87,115,255);
   background: linear-gradient(90deg, rgba(87,115,255,1) 0%, rgba(255,46,89,1) 100%);
 }
