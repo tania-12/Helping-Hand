@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4e324e6b-84ae-45ad-a11b-f3697459026a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +51,8 @@
       <workItem from="1670296406570" duration="4901000" />
       <workItem from="1670335082857" duration="2041000" />
       <workItem from="1670344061975" duration="761000" />
+      <workItem from="1670973073226" duration="946000" />
+      <workItem from="1670978030088" duration="3007000" />
     </task>
     <servers />
   </component>
