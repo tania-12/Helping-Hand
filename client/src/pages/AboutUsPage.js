@@ -27,9 +27,6 @@ function AboutUsPage(props) {
               <a className="iconLink" href="https://github.com/tania-12">
                 <GoMarkGithub className="icon" />
               </a>
-              <a className = "iconLink" href="">
-                <GrPersonalComputer className = "icon" />
-              </a>
               </div>
           </div>
           <div className="col-lg-4 aboutCard">
