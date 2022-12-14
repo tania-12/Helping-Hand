@@ -13,10 +13,12 @@ import { AuthProvider } from "./context/AuthContext";
 import AuthButton from "./components/AuthButton";
 import PrivateRouteRequiresAuth from "./components/PrivateRouteRequiresAuth";
 import "./App.css";
+import Footer from "./components/Footer";
+
 
 function Navigation(props) {
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark shadow mb-3">
+    <nav className="navbar navbar-expand-sm navbar-light bg-light mb-3">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/Home">
           Helping Hand
@@ -56,14 +58,10 @@ function Navigation(props) {
 
 
 function App() {
-  const [currentForm, setCurrentForm] = useState('login');
   
-  const toggleForm = (formName) => {
-    setCurrentForm(formName);
-  }
-
 
   return (
+    
     <AuthProvider>
     <BrowserRouter>
       <Navigation />
@@ -77,9 +75,9 @@ function App() {
             <Route path="/Menu" element={<Menu />} />
             <Route path="/Profile" element={<ProfilePage />} />
           </Routes>
-          
         </div>
       </div>
+    <Footer />
     </BrowserRouter>
     </AuthProvider>
     

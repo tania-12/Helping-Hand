@@ -27,14 +27,17 @@ export const Register = (props) => {
           <label className = "formTitles" htmlFor = "password"> Password </label>
           <input value = {pass} onChange = {(e) => setPass(e.target.value)}  type = "password" placeholder = "******" name = "password"/>
           <Link to = "/Profile">
-              <button type = "submit"> Register</button>
+              <button className = "regLogButton" type = "submit"> Register</button>
           </Link>
       </form>
       <label className = "formTitles" htmlFor = "login"> Already have an account? </label>
       <Link to = "/Login"> 
         <button class = "loginLink" className = "link-btn" type = "login">Login</button>
-      </Link>     
+      </Link>   
+        
     </div>  
+    <div className = "block2">
+    </div>
     </div>
     )
 }

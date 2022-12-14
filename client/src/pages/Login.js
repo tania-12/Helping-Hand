@@ -37,7 +37,7 @@ export const Login = (props) => {
             <label htmlFor = "password"> Password </label>
             <input value = {pass} onChange = {(e) => setPass(e.target.value)}  type = "password" placeholder = "******" name = "password"/>
             <Link to = "/Profile">
-              <button type = "submit"> Log In</button>
+              <button className = "regLogButton" type = "submit"> Log In</button>
             </Link>
 
         </form>

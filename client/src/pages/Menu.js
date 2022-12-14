@@ -32,6 +32,7 @@ export const Menu = (props) => {
                     <div className ="content">
                     <img src = {sanitation} className="logo" alt="" ></img>
                     </div>
+                    <div className = "space"></div>
                     <button className = "boss" onClick={(e) => {
                          e.preventDefault();
                         window.location.href='https://www.makecompost.nyc/mcnt-calendar/volunteer-manhattan-bhs76-6n73t-d6kb7-9alw7-rl2rj-y7xyz-bsak7-ajsmg-l5rwh-6d5c2-jnws7-mdgez-xhajm-dykxe-dczeb-haknt-aa9a9-27swc-xpxk8-fpa27-d3fzw-rc4fz-n7fpr-9c5nt-zzgs4-c77db-pesm6'}}>Sanitation</button>
@@ -43,6 +44,7 @@ export const Menu = (props) => {
                     <div className ="content">
                     <img src = {patagonia} className="logo" alt="" ></img>
                     </div> 
+                    <div className = "space"></div>
                     <button className = "boss" onClick={(e) => {
                          e.preventDefault();
                         window.location.href= 'https://www.patagonia.com/actionworks/events/111390/community-volunteer-landscaping-at-ridgewood-reservoir/'}}>Patagonia</button>
@@ -53,6 +55,7 @@ export const Menu = (props) => {
                     <div className ="content">
                     <img src = {park} className="logo"  alt="" ></img>
                     </div> 
+                    <div className = "space"></div>
                     <button className = "boss" onClick={(e) => {
                          e.preventDefault();
                         window.location.href='https://www.nycgovparks.org/events/2022/12/15/its-my-park-at-ralph-bunche-park';
@@ -64,6 +67,7 @@ export const Menu = (props) => {
                     <div className ="content">
                     <img class = "longImage" className = "logo" src = {logo} alt="" ></img>
                     </div>
+                    <div className = "space"></div>
                     <button className = "boss" onClick={(e) => {
                          e.preventDefault();
                         window.location.href='https://www.bklynlibrary.org/calendar/east-new-york-reads-new-lots-library-20230103'}}>Brooklyn Library</button> 
@@ -75,6 +79,7 @@ export const Menu = (props) => {
                     <div className ="content">
                     <img className = "logo" src = {kitchen}  alt="" ></img>
                     </div>  
+                    <div className = "space"></div>
                     <button className = "boss" onClick={(e) => {
                          e.preventDefault();
                         window.location.href='https://holyapostlesnyc.org/event/soup-kitchen-meal-service/2023-01-04/'}}>Holy Apostles</button>
@@ -86,6 +91,7 @@ export const Menu = (props) => {
                     <div className ="content">
                     <img src = {prospect} className="logo" alt="" ></img>
                     </div> 
+                    <div className = "space"></div>
                     <button className = "boss" onClick={(e) => {
                          e.preventDefault();
                         window.location.href='https://www.prospectpark.org/get-involved/volunteer/volunteer-event-registration/'}}>Prospect Park</button> 
@@ -96,6 +102,7 @@ export const Menu = (props) => {
                     <div className = "content">
                     <img src = {zoo} className="logo" alt="" ></img>
                     </div>  
+                    <div className = "space"></div>
                     <button className = "boss" onClick={(e) => {
                          e.preventDefault();
                         window.location.href='https://queenszoo.com/teens/teen-volunteer-program'}}>WCS</button>
@@ -106,6 +113,7 @@ export const Menu = (props) => {
                     <div className ="content">
                     <img className = "logo" src = {vet}  alt="" ></img>
                     </div>  
+                    <div className = "space"></div>
                     <button className = "boss" onClick={(e) => {
                          e.preventDefault();
                         window.location.href='https://www.nyp.org/brooklyn/volunteer-opportunities/volunteer-programs/canine-cuddlers'}}>NYP</button>
@@ -116,6 +124,7 @@ export const Menu = (props) => {
                     <div className ="content">
                     <img className = "logo" src = {garden}  alt="" ></img>
                     </div>  
+                    <div className = "space"></div>
                     <button className = "boss" onClick={(e) => {
                          e.preventDefault();
                         window.location.href='https://holyapostlesnyc.org/event/soup-kitchen-meal-service/2023-01-04/'}}>QBG</button>
